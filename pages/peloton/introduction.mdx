@@ -1,0 +1,20 @@
+# PELOTON
+
+The combination of images and text on their Contact Us page is helpful, direct, and organized.
+
+For example, you have two routes you can take: “Need help with your hardware or order?” or “Have questions before making a purchase?”.
+
+And each has a button connecting you to the correct department.
+
+
+ 
+import { useState } from 'react'
+ 
+export function Counter({ children }) {
+  const [count, setCount] = useState(0)
+  return <button onClick={() => setCount(count + 1)}>
+    {children}{count}
+  </button>
+}
+ 
+<Counter>**Clicks**: </Counter>
